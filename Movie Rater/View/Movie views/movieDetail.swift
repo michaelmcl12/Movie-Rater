@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct movieDetail: View {
     var movie: Movie
+    @State private var isEditView = false
     
     private var formattedYear: String {
         let calendar = Calendar.current
@@ -39,14 +41,14 @@ struct movieDetail: View {
             VStack (alignment: .leading) {
                 Text(movie.name)
                     .bold()
-                    .font(.largeTitle)
-
+                    .font(.title)
+                
                 HStack {
                     Text("Director: ")
                     Text(movie.director)
-                        
+                    
                 }.font(.title)
-
+                
                 HStack {
                     Text(movie.genre.rawValue)
                     
@@ -75,8 +77,34 @@ struct movieDetail: View {
             }
             .padding()
         }
+        .toolbar {
+            Button("Edit") {
+                isEditView = true
+            }
+        }
+        .sheet(isPresented: $isEditView) {
+            NavigationStack {
+                editMovie(movie: movie)
+                    .navigationTitle(movie.name)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                isEditView = false
+                            }
+                        }
+                        
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Done") {
+                                isEditView = false
+                                save()
+                            }
+                        }
+                    }
+            }
+        }
     }
 }
+
 
 //#Preview {
 //    let aMovie = Movie()

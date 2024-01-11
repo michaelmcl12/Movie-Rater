@@ -16,6 +16,7 @@
 		A4EACAB12B4F074400BF2F16 /* movieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EACAB02B4F074400BF2F16 /* movieList.swift */; };
 		A4EACAB32B4F075F00BF2F16 /* movieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EACAB22B4F075E00BF2F16 /* movieRow.swift */; };
 		A4EACAB52B4F2D5600BF2F16 /* addMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EACAB42B4F2D5600BF2F16 /* addMovie.swift */; };
+		A4EACAB72B50416E00BF2F16 /* editMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EACAB62B50416E00BF2F16 /* editMovie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		A4EACAB02B4F074400BF2F16 /* movieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieList.swift; sourceTree = "<group>"; };
 		A4EACAB22B4F075E00BF2F16 /* movieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieRow.swift; sourceTree = "<group>"; };
 		A4EACAB42B4F2D5600BF2F16 /* addMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addMovie.swift; sourceTree = "<group>"; };
+		A4EACAB62B50416E00BF2F16 /* editMovie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editMovie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				A4EACAAD2B4EF4B600BF2F16 /* movieDetail.swift */,
 				A4EACAB02B4F074400BF2F16 /* movieList.swift */,
 				A4EACAB22B4F075E00BF2F16 /* movieRow.swift */,
+				A4EACAB62B50416E00BF2F16 /* editMovie.swift */,
 			);
 			path = "Movie views";
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4EACAB72B50416E00BF2F16 /* editMovie.swift in Sources */,
 				A4EACAAA2B4EF19800BF2F16 /* movie.swift in Sources */,
 				A4EACA9E2B4EF17900BF2F16 /* ContentView.swift in Sources */,
 				A4EACAB12B4F074400BF2F16 /* movieList.swift in Sources */,
