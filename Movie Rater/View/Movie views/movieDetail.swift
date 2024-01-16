@@ -85,21 +85,6 @@ struct movieDetail: View {
         .sheet(isPresented: $isEditView) {
             NavigationStack {
                 editMovie(movie: movie)
-                    .navigationTitle(movie.name)
-                    .toolbar {
-                        ToolbarItem(placement: .cancellationAction) {
-                            Button("Cancel") {
-                                isEditView = false
-                            }
-                        }
-                        
-                        ToolbarItem(placement: .confirmationAction) {
-                            Button("Done") {
-                                isEditView = false
-                                save()
-                            }
-                        }
-                    }
             }
         }
     }

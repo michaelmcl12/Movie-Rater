@@ -37,7 +37,7 @@ struct addMovie: View {
                             Text(genre.rawValue)
                         }
                     }
-                    .pickerStyle(WheelPickerStyle()) // You can change the picker style based on your preference
+                    .pickerStyle(WheelPickerStyle())
                 }
                 
                 Section(header: Text("Comments")) {

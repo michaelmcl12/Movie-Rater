@@ -9,7 +9,6 @@ import SwiftUI
 import SwiftData
 
 struct movieList: View {
-    
     @Environment(\.modelContext) var modelContext
     @Query var movies: [Movie]
     
@@ -37,12 +36,6 @@ struct movieList: View {
     
     func deleteMovie(_ movie: Movie) {
         modelContext.delete(movie)
-    }
-    
-    func updateItem(_ movie: Movie){
-        movie.name = "Updated name!"
-        
-        try? modelContext.save()
     }
 }
 
